@@ -1,0 +1,21 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <script>
+      var stupidSites = [
+        "http://www.a.com",
+        "http://www.b.com",
+        "http://www.c.com"];
+        //when user clicks a button, generate random number, and display link on page that corresponds to random number.
+        function siteValues() {
+          var rand = Math.floor(Math.random() * stupidSites.length)
+          var x = stupidSites[rand];
+          document.getElementById('showLink').innerHTML = "<a href="+x+">Click Here</a>";
+        }
+    </script>
+    <button onclick="siteValues()">Click Me</button>
+    <h1 id="showLink"></h1>
+  </body>
+  </html>
